@@ -1,6 +1,75 @@
 <div class="toolbar" role="banner">
-    <img width="100" alt="A Q Leather Logo" src="assets/icons/aqleather-no-text.jpg" />
+    <img alt="A Q Leather Logo" src="assets/icons/aqleather-no-text.jpg" class="img" />
     <span class="title-tag">A Q Leather</span>
 
     <div class="spacer"></div>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-1">
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">
+                        &times;
+                    </a>
+                    <div>&nbsp;</div>
+                    <div class="navbar navbar-collapse" id="mainMenu">
+                        <ul class="navbar-nav ml-auto text-uppercase f1">
+                            <li>
+                                <a href="/home">Home</a>
+                            </li>
+                            <li>
+                                <a href="/products/men">Men's Products</a>
+                            </li>
+                            <li>
+                                <a href="/products/women">Women's Products</a>
+                            </li>
+                            <li>
+                                <a href="/products/accessories">Accessories</a>
+                            </li>
+                            <!-- <li>
+                                <a href="/home/about-us">About Us</a>
+                            </li> -->
+                            <li>
+                                <a href="home/contact-us">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="main">
+                    <span style="font-size:20px;cursor:pointer" (click)="openNav()">
+                        &#9776;
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand">
+            <div class="navbar-collapse" id="mainMenu">
+                <ul class="navbar-nav ml-auto text-uppercase f1">
+                    <li>
+                        <a href="/home">Home</a>
+                    </li>
+                    <li>
+                        <a href="/products/men">Men's Products</a>
+                    </li>
+                    <li>
+                        <a href="/products/women">Women's Products</a>
+                    </li>
+                    <li>
+                        <a href="/products/accessories">Accessories</a>
+                    </li>
+                    <!-- <li>
+                        <a href="/home/about-us">About Us</a>
+                    </li> -->
+                    <li>
+                        <a href="home/contact-us">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<div class="container-fluid">
 </div>

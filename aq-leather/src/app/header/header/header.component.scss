@@ -16,7 +16,8 @@
   overflow-y: hidden;
 }
 
-.toolbar img {
+.img {
+  width: 100px;
   margin: 0 20px;
 }
 
@@ -28,8 +29,129 @@
   flex: 1;
 }
 
+#mainMenu li > a {
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: white;
+  font-weight: 400;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+}
+
+#mainMenu li:not(:last-of-type) {
+  margin-right: 30px;
+}
+
+#mainMenu li > a::before {
+  position: absolute;
+  content: "";
+  width: calc(100% - 1px);
+  height: 1px;
+  background: white;
+  bottom: -6px;
+  left: 0;
+  transform: scale(0, 1);
+  transform-origin: right center;
+  z-index: -1;
+  transition: transform 0.5s ease;
+}
+
+#mainMenu li > a:hover::before,
+#mainMenu li > a.active::before {
+  transform: scale(1, 1);
+  transform-origin: left center;
+}
+
+#main,
+#mySidenav {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
+  #main,
+  #mySidenav {
+    display: block;
+  }
+
   .title-tag {
-    font-size: 30px;
+    font-size: 20px;
+    // min-width: 100%;
+  }
+
+  .img {
+    width: 70px;
+    margin: 0 10px;
+  }
+
+  .toolbar {
+    height: 90px;
+  }
+
+  .container {
+    max-width: 20%;
+  }
+
+  .navbar-expand {
+    display: none;
+  }
+
+  .navbar-nav {
+    margin-bottom: 20px;
+  }
+
+  .sidenav {
+    height: auto;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: auto;
+    right: 0;
+    background-color: #111;
+    color: white;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: 0.2s;
+    padding-top: 10px;
+  }
+
+  .sidenav .closebtn {
+    padding-right: 10px;
+    padding-top: 4px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: 0.2s;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 25px;
+  }
+
+  #main {
+    transition: margin-left 0.5s;
+  }
+
+  .sidenav {
+    padding-top: 15px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .title-tag {
+    font-size: 15px;
+  }
+
+  .img {
+    width: 50px;
+    margin: 0 15px;
+  }
+
+  .toolbar {
+    height: 70px;
   }
 }
