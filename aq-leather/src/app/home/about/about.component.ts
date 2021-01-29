@@ -6,13 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements OnInit {
-  public showModal: boolean = false;
+  public showModalFounded: boolean = false;
+  public showModalMission: boolean = false;
+  public showModalVision: boolean = false;
+  public showModalCustSat: boolean = false;
+  public showModalAchiv: boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
-  }
-
-  openModal() {
-    this.showModal = true;
   }
 }

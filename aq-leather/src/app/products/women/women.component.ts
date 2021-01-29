@@ -7,36 +7,36 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WomenComponent implements OnInit {
   dataArray = [{
-    src: 'https://source.unsplash.com/random',
-    color: 'primary'
+    src: 'assets/images/women/1221.JPG',
+    name: '1211'
   },
   {
-    src: 'https://source.unsplash.com/random',
-    color: 'danger'
+    src: 'assets/images/women/1241 (2).JPG',
+    name: '1241'
   },
   {
-    src: 'https://source.unsplash.com/random',
-    color: 'info'
+    src: 'assets/images/women/3265 (1).JPG',
+    name: '3265'
   },
   {
-    src: 'https://source.unsplash.com/random',
-    color: 'success'
+    src: 'assets/images/women/1210.JPG',
+    name: '1210'
   },
   {
-    src: 'https://source.unsplash.com/random',
-    color: 'warning'
+    src: 'assets/images/women/64509 (1).jpg',
+    name: '64509'
   },
   {
-    src: 'https://source.unsplash.com/random',
-    color: 'danger'
+    src: 'assets/images/women/9913.JPG',
+    name: '9913'
   },
   {
-    src: 'https://source.unsplash.com/random',
-    color: 'info'
+    src: 'assets/images/women/64902 (1).jpg',
+    name: '64902'
   },
   {
-    src: 'https://source.unsplash.com/random',
-    color: 'success'
+    src: 'assets/images/women/536856.20-1024x1024.jpg',
+    name: '536856.20'
   }]
 
   constructor() { }

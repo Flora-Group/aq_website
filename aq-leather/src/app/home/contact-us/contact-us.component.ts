@@ -18,7 +18,7 @@ export class ContactUsComponent implements OnInit {
     {
       src: 'instagram',
       name: 'Instragram',
-      value: 'aqleather',
+      value: '@aqleather',
       button: 'Follow Now',
       link: 'https://www.instagram.com/aqleather'
     },

@@ -1,28 +1,141 @@
-<button class="btn btn-default" (click)="showModal = !showModal">
-    bounceIn
-</button>
-<div class="modal" data-easein="bounceIn" tabindex="-1" role="dialog" *ngIf="showModal">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title">
-                    Modal Header
-                </h4>
+<div class="container">
+    <div class="card">
+        <p class="card__name">Founded</p>
+        <p class="card__desc">M/S A Q LEATHER was established in 1999, in the southern...</p>
+        <button class="btn draw-border" (click)="showModalFounded = !showModalFounded">Read More</button>
+    </div>
+    <div class="card">
+        <p class="card__name">Mission</p>
+        <p class="card__desc">We enjoy an edge over our contemporaries, thanks to a team of...</p>
+        <button class="btn draw-border" (click)="showModalMission = !showModalMission">Read More</button>
+    </div>
+</div>
+<div class="container2">
+    <div class="card">
+        <p class="card__name">Customer Satisfaction</p>
+        <p class="card__desc">We have a belief of treating our customer as a king and know that they...</p>
+        <button class="btn draw-border" (click)="showModalCustSat = !showModalCustSat">Read More</button>
+    </div>
+    <div class="card">
+        <p class="card__name">Achievements</p>
+        <p class="card__desc">A Q LEATHER, as an inhouse producer and exporter of leather items has a...</p>
+        <button class="btn draw-border" (click)="showModalAchiv = !showModalAchiv">Read More</button>
+    </div>
+</div>
+
+
+<div class="modal" data-easein="bounceIn" tabindex="-1" role="dialog" *ngIf="showModalFounded">
+    <div class="overlay">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">
+                        Founded
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        M/S A Q LEATHER was established in 1999, in the southern part of Kolkata by Mr. Md. Ahmed.
+                        Our Company is one of the leading companies of in-house manufacturer and exporter of leather
+                        goods that gives customized service. For more than two decades we have proved our mettle and
+                        manufactured an array of leather accessories like wallet, purse, credit card holder, file folder,
+                        etc. We practice ethical business and our products are unblemished in form. Constant research
+                        and use of updated machineries have made way for top of the line products. Our demand of
+                        leather is fulfilled from wet blue hide of cow, buffalo and goat. Sometimes we also purchase
+                        leather from Chinese and Italian Tanneries.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-default" (click)="showModalFounded = !showModalFounded">
+                        Close
+                    </button>
+                </div>
             </div>
-            <div class="modal-body">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
+        </div>
+    </div>
+</div>
+
+<div class="modal" data-easein="bounceIn" tabindex="-1" role="dialog" *ngIf="showModalMission">
+    <div class="overlay">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">
+                        Mission
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        We enjoy an edge over our contemporaries, thanks to a team of highly specialized personnel like 
+                        expert craftsmen, creative designers, leather connoisseurs, quality personnel, skilled labor and 
+                        many more who make sure that international standards are met as an end result. The efficiency 
+                        and hard work with which the products are designed and developed manifests the commitment 
+                        with which they are worked upon.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-default" (click)="showModalMission = !showModalMission">
+                        Close
+                    </button>
+                </div>
             </div>
-            <div class="modal-footer">
-                <button class="btn btn-primary" (click)="showModal = !showModal">
-                    Close
-                </button>
+        </div>
+    </div>
+</div>
+
+<div class="modal" data-easein="bounceIn" tabindex="-1" role="dialog" *ngIf="showModalCustSat">
+    <div class="overlay">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">
+                        Customer Satisfaction
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        We have a belief of treating our customer as a king and know that they are the sole reason 
+                        behind our existence. This has led to our strong rooted establishment in the leather market 
+                        and a long lasting relationship with our clients. Improvements and innovations in our 
+                        workshop have gained solid ground in foreign lands like Israel, Austria, Germany, Poland, 
+                        Italy, France, and Australia apart from our Indian customers. By keeping in touch with our 
+                        customers we learn about their requirements and as per their needs we provide them the exact 
+                        quality that they want. Timely delivery in sound condition is another reason behind our 
+                        reputation. We deal in both individual and bulk orders. They regard suggestions by 
+                        customers and come out with improvised versions of the products.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-default" (click)="showModalCustSat = !showModalCustSat">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" data-easein="bounceIn" tabindex="-1" role="dialog" *ngIf="showModalAchiv">
+    <div class="overlay">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">
+                        Achivements
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        A Q LEATHER, as an inhouse producer and exporter of leather items has a strong infrastructure 
+                        and resource on which the business is based. By using state of the art equipment, which results 
+                        in excellent produce, we have won hearts in India as well as across the seas.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-default" (click)="showModalAchiv = !showModalAchiv">
+                        Close
+                    </button>
+                </div>
             </div>
         </div>
     </div>

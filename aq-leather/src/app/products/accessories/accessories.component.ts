@@ -7,36 +7,36 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AccessoriesComponent implements OnInit {
   dataArray = [{
-    src: 'https://source.unsplash.com/random',
-    color: 'primary'
+    src: 'assets/images/accessories/5530.jpg',
+    name: '5530'
   },
   {
-    src: 'https://source.unsplash.com/random',
-    color: 'danger'
+    src: 'assets/images/accessories/12206 (1).jpg',
+    name: '12206'
   },
   {
-    src: 'https://source.unsplash.com/random',
-    color: 'info'
+    src: 'assets/images/accessories/59380.jpg',
+    name: '59380'
   },
   {
-    src: 'https://source.unsplash.com/random',
-    color: 'success'
+    src: 'assets/images/accessories/81506 (3).jpg',
+    name: '81506'
   },
   {
-    src: 'https://source.unsplash.com/random',
-    color: 'warning'
+    src: 'assets/images/accessories/IMG_8431.JPG',
+    name: '8431'
   },
   {
-    src: 'https://source.unsplash.com/random',
-    color: 'danger'
+    src: 'assets/images/accessories/IMG_9254.JPG',
+    name: '9254'
   },
   {
-    src: 'https://source.unsplash.com/random',
-    color: 'info'
+    src: 'assets/images/accessories/424 Pouch.JPG',
+    name: '424 Pouch'
   },
   {
-    src: 'https://source.unsplash.com/random',
-    color: 'success'
+    src: 'assets/images/accessories/59378 (990).jpg',
+    name: '59378'
   }]
 
   constructor() { }
