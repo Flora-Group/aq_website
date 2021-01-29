@@ -12,14 +12,44 @@
   text-align: center;
 }
 
-.footer div {
+.footer .cpyrt {
+  margin-left: 20px;
   font-size: 20px;
   vertical-align: middle;
   margin-top: 15px;
 }
 
+.footer .tag {
+  float: left;
+  margin-left: 20px;
+  margin-top: -20px;
+  font-size: 15px;
+  vertical-align: middle;
+}
+
+a:link,
+a:visited {
+  color: $banner-color;
+  background-color: transparent;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 768px) {
-  .footer div {
+  .footer .cpyrt {
+    margin-left: 5px;
     font-size: 15px;
+  }
+  .footer {
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .footer .cpyrt {
+    margin-left: 2px;
+    font-size: 10px;
+  }
+  .footer {
+    height: 40px;
   }
 }

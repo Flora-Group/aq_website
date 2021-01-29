@@ -11,4 +11,16 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  openNav() {
+    //@ts-ignore
+    document.getElementById("mySidenav").style.width = "250px";
+    //@ts-ignore
+    document.getElementById("main").style.opacity = "1";
+  }
+  
+  closeNav() {
+    //@ts-ignore
+    document.getElementById("mySidenav").style.width = "0px";
+  }
 }

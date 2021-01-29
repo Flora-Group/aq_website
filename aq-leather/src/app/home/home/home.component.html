@@ -1,1 +1,128 @@
-<p>home works!</p>
+<div class="container gallery mobile">
+    <div class="box">
+        <a href="/products/men">
+            <img class="head-img" src="assets/images/wallet.jpg">
+            <span>Wallet</span>
+        </a>
+    </div>
+    <div class="box">
+        <a href="/products/women">
+            <img class="head-img" src="assets/images/purse.jpg">
+            <span>Purse</span>
+        </a>
+    </div>
+    <div class="box">
+        <a href="/products/accessories">
+            <img class="head-img" src="assets/images/coin-case.jpg">
+            <span>Coin Case</span>
+        </a>
+    </div>
+    <div class="box">
+        <a href="/products/accessories">
+            <img class="head-img" src="assets/images/file-folder.jpg">
+            <span>File Folder</span>
+        </a>
+    </div>
+    <div class="box">
+        <a href="/products/accessories">
+            <img class="head-img" src="assets/images/pouch.jpg">
+            <span>Pouch</span>
+        </a>
+    </div>
+</div>
+
+<div class="container-fluid page-top">
+    <div class="px-lg-5">
+        <div class="row py-2 pb-5">
+            <div class="col-12">
+                <div class="text-black text-center p-2 shadow-sm rounded banner">
+                    <h3>Men's Products</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <ng-container *ngFor="let data of menArray">
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+                    <div class="bg-white rounded shadow-sm">
+                        <a href="/products/men">
+                            <img src="{{data.src}}" alt="" class="img-fluid card-img-center">
+                        </a>
+                        <div class="p-2 text-center">
+                            <h5> <a href="/products/men" class="text-dark">{{data.name}}</a></h5>
+                        </div>
+                    </div>
+                </div>
+            </ng-container>
+            <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+                <div class="py-5 my-5 ml-0 text-center"><a href="/products/men"
+                        class="btn btn-dark px-5 py-3 text-uppercase">Show
+                        me more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid page-top">
+    <div class="px-lg-5">
+        <div class="row py-2 pb-5">
+            <div class="col-12">
+                <div class="text-black text-center p-2 shadow-sm rounded banner">
+                    <h3>Women's Products</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <ng-container *ngFor="let data of womenArray">
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+                    <div class="bg-white rounded shadow-sm">
+                        <a href="/products/women">
+                            <img src="{{data.src}}" alt="" class="img-fluid card-img-center">
+                        </a>
+                        <div class="p-2 text-center">
+                            <h5> <a href="/products/women" class="text-dark">{{data.name}}</a></h5>
+                        </div>
+                    </div>
+                </div>
+            </ng-container>
+            <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+                <div class="py-5 my-5 ml-0 text-center"><a href="/products/women"
+                        class="btn btn-dark px-5 py-3 text-uppercase">Show
+                        me more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid page-top">
+    <div class="px-lg-5">
+        <div class="row py-2 pb-5">
+            <div class="col-12">
+                <div class="text-black text-center p-2 shadow-sm rounded banner">
+                    <h3>Accessories</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <ng-container *ngFor="let data of accessoriesArray">
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+                    <div class="bg-white rounded shadow-sm">
+                        <a href="/products/accessories">
+                            <img src="{{data.src}}" alt="" class="img-fluid card-img-center">
+                        </a>
+                        <div class="p-2 text-center">
+                            <h5> <a href="/products/accessories" class="text-dark">{{data.name}}</a></h5>
+                        </div>
+                    </div>
+                </div>
+            </ng-container>
+            <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+                <div class="py-5 my-5 ml-0 text-center"><a href="/products/accessories"
+                        class="btn btn-dark px-5 py-3 text-uppercase">Show
+                        me more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

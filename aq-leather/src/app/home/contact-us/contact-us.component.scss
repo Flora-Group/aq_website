@@ -1,0 +1,40 @@
+.content {
+  margin-top: 100px;
+}
+
+.title {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 80px;
+}
+
+.card-box {
+  padding: 20px;
+  border-radius: 3px;
+  margin-bottom: 30px;
+}
+
+.thumb-lg {
+  height: 100px;
+  width: 100px;
+}
+
+.img-thumbnail {
+  padding: 0.25rem;
+  background-color: #fff;
+  border-radius: 35%;
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    margin-top: 10px;
+  }
+  
+  .title {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 30px;
+  }
+}
