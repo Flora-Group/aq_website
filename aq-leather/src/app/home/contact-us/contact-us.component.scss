@@ -1,29 +1,60 @@
 .content {
-  margin-top: 100px;
+  margin-top: 60px;
+  margin-left: 200px;
+}
+
+.mt-3 > h4 {
+  font-size: 20px;
+}
+
+.mt-3 > p {
+  font-size: 15px;
+}
+
+.overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: block; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+iframe {
+  margin: 100px;
+}
+
+.close-map {
+  margin-top: 30%;
 }
 
 .title {
-  margin-top: 100px;
+  margin-top: 30px;
   text-align: center;
-  font-size: 80px;
+  font-size: 30px;
 }
 
 .card-box {
-  padding: 20px;
+  padding: 5px;
   border-radius: 3px;
   margin-bottom: 30px;
 }
 
 .thumb-lg {
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
 }
 
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
   border-radius: 35%;
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
 }
 
@@ -31,7 +62,7 @@
   .content {
     margin-top: 10px;
   }
-  
+
   .title {
     margin-top: 40px;
     text-align: center;

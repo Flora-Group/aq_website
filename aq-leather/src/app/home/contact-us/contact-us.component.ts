@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactUsComponent implements OnInit {
 
+  public showMap: boolean = false;
+
   public socialList: Array<any> = [
     {
       src: 'gmail',
@@ -23,6 +25,13 @@ export class ContactUsComponent implements OnInit {
       link: 'https://www.instagram.com/aqleather'
     },
     {
+      src: 'map',
+      name: 'Address',
+      value: '22, 1, Chandra Nath Roy Rd, Panchanna Pally, Topsia, Kolkata, West Bengal 700039',
+      button: 'Show Map',
+      toggle: 'showMap'
+    },
+    {
       src: 'whatsapp',
       name: 'Whatsapp',
       value: '+91 7003702947',
@@ -35,7 +44,7 @@ export class ContactUsComponent implements OnInit {
       value: '+91 9903321265',
       button: 'Message Now',
       link: 'https://api.whatsapp.com/send?phone=9903321265'
-    },
+    }
   ]
 
   constructor() {
