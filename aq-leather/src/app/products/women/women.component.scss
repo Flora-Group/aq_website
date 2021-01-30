@@ -6,6 +6,20 @@
   background: linear-gradient(to right,  #5d5e5f, #3c3c3d, #000000);
 }
 
+.display-4 {
+  font-size: 30px;
+}
+
+.lead {
+  font-size: 15px;
+}
+
 img {
-  height:400px;
+  height: 300px;
+  width: 100%;
+}
+
+.p-4 {
+  border: 1px black;
+  border-style: solid none none none;
 }
