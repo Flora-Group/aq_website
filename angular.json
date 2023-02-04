@@ -80,6 +80,16 @@
               "browserTarget": "aq-leather:build:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "aq-leather:build:production",
+            "firebaseProject": "a-q-leather",
+            "firebaseHostingSite": "a-q-leather"
+          }
         }
       }
     }
