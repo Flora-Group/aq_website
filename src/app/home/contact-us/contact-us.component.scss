@@ -83,19 +83,16 @@ iframe {
   width: 500px;
 }
 
-@media screen and (max-width:400px) {
-
-  .row {
-    justify-content: center;
-  }
+@media screen and (max-width:450px) {
 
   .close-map {
     display: flex;
     justify-content: center;
+    margin-top: 0;
   }
 
   iframe {
-    height: 400px;
     width: 250px;
+    margin: 100px 0 0 15%;
   }
 }
