@@ -1,6 +1,6 @@
 {
   "name": "aq-leather",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "start": "ng serve",
     "start:dev": "ng serve --port=4203 --open",
