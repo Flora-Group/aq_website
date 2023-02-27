@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "a-q-leather"
+  },
+  "targets": {
+    "a-q-leather": {
+      "hosting": {
+        "aq-leather": [
+          "a-q-leather"
+        ]
+      }
+    }
+  }
+}
